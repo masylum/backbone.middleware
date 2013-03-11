@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Backbone middleware
 
 Routers are fine, but sometime you need moar.
@@ -95,3 +96,9 @@ var middleware = Backbone.Middleware.middleware;
 ## Tests
 
 Not yet, sorry
+=======
+backbone.middleware
+===================
+
+Backbone.middleware
+>>>>>>> 3a6dedfeaa4f41c77b44ff5b7a5540596ebd8063
