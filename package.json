@@ -1,0 +1,10 @@
+{
+  "name": "backbone.middleware",
+  "description": "Routers are fine, but sometime you need moar.",
+  "version": "0.0.1",
+  "author": "Pau ramon <masylum@gmail.com>",
+  "keywords": ["backbone", "middleware", "router", "ender", "teambox"],
+  "repository": {"type": "git", "url": "git@github.com:masylum/backbone.middleware.git"},
+  "main": "./backbone.middleware.js",
+  "ender": "./backbone.middleware.js"
+}
