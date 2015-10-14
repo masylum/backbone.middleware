@@ -74,6 +74,16 @@
   };
 
   /**
+   * Removes the queryparams from the fragment
+   *
+   * @param  {String} fragment
+   * @return {String}
+   */
+  function removeQueryParams(frm) {
+    return frm.replace(/(\?(.*))?$/, '');
+  }
+
+  /**
    * Populates a params object
    *
    * @return {Function}
@@ -81,9 +91,10 @@
   Middleware.params = function () {
     var parameters = _.toArray(arguments);
     return function params() {
-      this.params = _.object(parameters, _.toArray(arguments));
+      var args = _.map(_.compact(_.toArray(arguments)), removeQueryParams);
+      this.params = _.object(parameters, args);
       params.next();
-    }
+    };
   };
 
   Backbone.Middleware = Middleware;
